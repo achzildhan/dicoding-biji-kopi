@@ -22,3 +22,27 @@
 }
 
 /* General Declaring */
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+  text-decoration: none;
+  list-style: none;
+}
+
+html::-webkit-scrollbar {
+    width: 1rem;
+  }
+  html::-webkit-scrollbar-track {
+    background: var(--second-color);
+  }
+  html::-webkit-scrollbar-thumb {
+    background: var(--main-font-color);
+    border-radius: 0.5rem;
+}
