@@ -136,7 +136,7 @@ const coffeesData = [
         "id": 20,
         "name": "Red Eye",
         "description": "Red Eye is an unique and rich flavour types of coffe. It's basic drip coffee with espresso added and has high concentration of caffeine.",
-        "image": "static/assets/products/frappe.jpg",
+        "image": "static/assets/products/redEye.jpg",
         "price": 5.00
       },
       {

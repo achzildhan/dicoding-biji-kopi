@@ -6,7 +6,7 @@
 ::after {
   /* Font */
   --font-color-main: rgb(182, 149, 109);
-  --font-color-secondary: rgb(163, 143, 119);
+  --font-color-secondary: rgb(129, 111, 91);
   --font-color-tertiary: rgb(237, 234, 239);
   /* Background */
   --bg-color-main: rgb(19, 19, 19);
@@ -101,17 +101,18 @@ body {
   border-color: var(--font-color-tertiary);
 }
 .btn-reset {
-  background-color: var(--color-darkest);
-  border-color: var(--color-darkest);
+  background-color: var(--font-color-main);
+  border-color: var(--font-color-main);
   padding: 0.5rem 1.5rem;
-  color: var(--bg-color-secondary);
-  font-size: 1.5rem;
+  color: var(--font-color-tertiary);
+  font-size: 1rem;
   font-weight: 500;
   transition: background-color 300ms var(--rounded);
 }
 .btn-reset:hover {
-  background-color: var(--color-darker);
-  border-color: var(--color-darker);
+  background-color: var(--font-color-secondary);
+  border-color: var(--font-color-secondary);
+  color: var(--font-color-tertiary);
 }
 .btn-to-top {
   position: fixed;
@@ -127,7 +128,7 @@ body {
   transition: background-color 300ms var(--rounded),
     transform 300ms var(--rounded);
 }
-.btn-to-top a {
+.btn-to-top i {
   height: 100%;
   width: 100%;
   display: flex;
@@ -334,14 +335,14 @@ body {
 }
 /* Home */
 
-/* MAIN WRAPPER CODE */
+/* Main Wrapper */
 .content {
   width: var(--max-width);
   background-color: var(--color-darkest);
 }
-/* END OF MAIN WRAPPER CODE */
+/* Main Wrapper */
 
-/* SITE SECTION CODE */
+/* Site Section */
 .site-section {
   max-width: var(--max-width);
   height: 100vh;
@@ -366,9 +367,9 @@ body {
   margin-bottom: 1rem;
   color: var(--color-tertiary);
 }
-/* END OF SITE SECTION CODE */
+/* Site Section */
 
-/* SITE SECTION ABOUT CODE */
+/*Site Section About Us */
 section#aboutus {
   position: relative;
   top: 120vh;
@@ -396,12 +397,13 @@ section#aboutus {
 }
 #aboutus .site-section-banner img {
   width: 700px;
+  margin-left: 2rem;
   border-radius: 2rem;
   box-shadow: 0px 0px 8px 8px var(--color-darker);
 }
-/* END SITE SECTION ABOUT CODE */
+/* Site Section About Us */
 
-/* SITE SECTION MENU CODE */
+/* Site Section Menu */
 section#menu {
   position: relative;
   top: 120vh;
@@ -416,10 +418,12 @@ section#menu {
   left: 0;
   width: var(--max-width);
   min-height: 100vh;
+  padding-bottom: 4rem;
   flex-direction: column;
   background-color: var(--color-darker);
   gap: 1rem;
 }
+
 #menu .picks {
   display: flex;
   min-height: 30rem;
@@ -572,17 +576,17 @@ section#menu {
   font-size: 1.5rem;
 }
 
-/* END OF SITE SECTION MENU CODE */
+/* Site Section Menu */
 
-/* SITE SECTION BUY CODE */
+/* Site Section Order */
 section#order {
   position: relative;
-  top: 240vh;
-  background:transparent;
+  top: 205vh;
+  background: var(--color-darker);
   z-index: 0;
 }
 #order {
-  background: url("../images/pattern.png");
+  background: var(--color-darker-half);
   text-align: center;
   position: relative;
 }
@@ -599,9 +603,9 @@ section#order {
   z-index: 10;
 }
 
-/* END OF SITE SECTION BUY CODE */
+/*Site Section Order */
 
-/* ORDERS CODE */
+/* Order */
 .orders-wrapper {
   display: flex;
   gap: 1rem;
@@ -612,6 +616,7 @@ section#order {
 }
 
 .orders {
+  margin-left: 2rem;
   flex-basis: 65%;
   text-align: start;
 }
@@ -651,19 +656,19 @@ section#order {
   align-items: center;
   padding: 1rem;
   border-radius: 0.5rem;
-  box-shadow: 0px 0px 8px 0px var(--color-darker-half);
+  box-shadow: 0px 0px 8px 3px var(--color-darker-half);
   background-color: var(--color-dark);
 }
 
 .orders-empty-title {
-  font-size: large;
+  font-size: 1.5rem;
   font-weight: 700;
-  color: var(--color-secondary);
+  color: var(--font-color-secondary);
 }
 
 .orders-empty-desc {
-  font-size: small;
-  color: var(--color-tertiary);
+  font-size: 1rem;
+  color: var(--font-color-tertiary);
 }
 
 .orders-empty-desc em {
@@ -686,18 +691,18 @@ section#order {
 }
 
 .orders-name {
-  color: var(--color-secondary);
+  color: var(--font-color-secondary);
   font-weight: 700;
-  font-size: x-large;
+  font-size: 1.5rem;
 }
 
 .orders-price {
-  font-size: larger;
-  color: var(--color-tertiary);
+  font-size: 1rem;
+  color: var(--font-color-tertiary);
 }
 
 .orders-btn-group {
-  flex-grow: 1;
+  flex-basis: 29%;
   display: flex;
   flex-direction: column;
   gap: 1rem;
