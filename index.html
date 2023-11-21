@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE-Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Biji Kopi | Cafe</title>
-  <script defer src="static/scripts/scripts.js" type="module"></script>
+  <!-- <script defer src="static/scripts/scripts.js" type="module"></script> -->
   <!-- Link to Logo Icon -->
   <link rel="icon" type="image/x-icon" href="static/assets/favicon.ico">
   <!-- Link to Font Awesome -->
@@ -136,7 +136,7 @@
               </div>
 
               <!-- Runner Up -->
-              <aside class="picks-runner-up">
+              <aside class="picks-runner-ups">
                 <!-- Second -->
                 <div class="picks-item picks-item-sm">
                   <h3 class="picks-item-title"></h3>
@@ -223,9 +223,15 @@
     </footer>
   </main>
 
-  <script src="static/scripts/loadMenu.js"></script>
-  <script src="static/scripts/scripts.js"></script>
   <script src="static/scripts/search.js"></script>
   <script src="static/scripts/banner.js"></script>
+  <script src="static/scripts/loadMenu.js"></script>
+  <script src="static/scripts/slider.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+    loadMenu();
+    sliderInit();
+    });
+  </script>
 </body>
 </html>
