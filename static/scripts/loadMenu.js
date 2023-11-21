@@ -14,7 +14,7 @@ function updateTopPicks(pickHTML, coffeeData) {
   pickHTML.style.backgroundPosition = `center`;
   pickHTML.querySelector(".picks-item-title").textContent = coffeeData.name;
   pickHTML.querySelector(".picks-item-desc").textContent =
-    burgerData.description;
+    coffeeData.description;
   pickHTML.querySelector(
     ".picks-item-price"
   ).textContent = `$${coffeeData.price}`;
@@ -29,7 +29,7 @@ function cardMenuBgString(url) {
 
 export default async function loadMenu() {
   // update data ke pilihan menu teratas
-  updateTopPicks(topPick, coffeesDataData[0]);
+  updateTopPicks(topPick, coffeesData[0]);
   updateTopPicks(runnerUpPickOne, coffeesData[1]);
   updateTopPicks(runnerUpPickTwo, coffeesData[2]);
 
@@ -42,19 +42,18 @@ export default async function loadMenu() {
         class="menu-card" 
         style="${cardMenuBgString(coffeesData[i].image)}"
       >
-        <figcaption class="menu-card-detail">
+         <figcaption class="menu-card-detail">
           <h3 class="menu-card-title">${coffeesData[i].name}</h3>
           <p class="menu-card-desc">
             ${coffeesData[i].description}
           </p>
-          <span class="menu-card-price">$${coffeesData[i].price}</span>
+          <span class="menu-card-price">${coffeesData[i].price}</span>
         </figcaption>
-        <button data-menu-id="${
-          coffeesData[i].id
-        }" class="btn btn-submit btn-order">Add To Orders</button>
+        <button data-menu-id="${coffeesData[i].id}" class="btn btn-submit btn-order">Add To Orders</button>
       </figure>
     `;
 
     menuList.append(menuListItem);
   }
 }
+S
