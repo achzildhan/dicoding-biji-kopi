@@ -30,52 +30,54 @@
     <!-- Navbar -->
     <nav class="navbar-wrapper">
       <div class="navbar-content">
-      <!-- Logo dan Bar Menu Button -->
-      <div class="navbar-content-left-side">
-          <a href="#" class="logo">
+        <!-- Logo dan Bar Menu Button -->
+        <div class="navbar-content-left-side">
+          <a href="#" class="navbar-logo">
             <img src="static/assets/logoRemove.png" alt="Biji Kopi">
           </a>
+          <button class="btn navbar-menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+          </button>
         </div>
 
-        <button class="btn navbar-menu-toggle">
-          <i class="fa-solid fa-bars"></i>
-        </button>
-      </div>
-
-      <!-- Navigation Website -->
-      <ul class="navbar-list">
-        <li class="navbar-list-item">
-          <a href="#home">Home</a>
-        </li>
-        <li class="navbar-list-item">
-          <a href="#aboutus">About us</a>
-        </li>
-        <li class="navbar-list-item">
-          <a href="#menu">Menu</a>
-        </li>
-        <li class="navbar-list-item">
-          <a href="#gallery">Gallery</a>
-        </li>
-      </ul>
-      <!-- Icons -->
-      <div class="navbar-icon">
-        <i class="fa-solid fa-cart-shopping"></i>
-        <i class="fa-solid fa-magnifying-glass"></i>
-      </div>
-      <!-- Search Box -->
-      <div class="search-box">
-        <input type="search" name="search" id="search" placeholder="What types of coffee do you like?">
+        <!-- Navigation Website -->
+        <ul class="navbar-list">
+          <li class="navbar-list-item">
+            <a href="#home" class="links">Home</a>
+          </li>
+          <li class="navbar-list-item">
+            <a href="#aboutus" class="links">About us</a>
+          </li>
+          <li class="navbar-list-item">
+            <a href="#menu" class="links">Menu</a>
+          </li>
+          <li class="navbar-list-item">
+            <a href="#order" class="links">Order</a>
+          </li>
+          <li class="navbar-list-item">
+            <a href="#gallery" class="links">Gallery</a>
+          </li>
+        </ul>
+        <!-- Icons -->
+        <div class="navbar-icon">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+        </div>
+        <!-- Search Box -->
+        <div class="search-box">
+          <input type="search" name="search" id="search" placeholder="What types of coffee do you like?">
+        </div>
       </div>
     </nav>
 
     <!-- Home -->
     <div id="home" class="home-wrapper">
       <div class="home-content">
-        <h1 class="title">Start Your Day with A Cup of Biji Kopi</h1>
-          <p>How to make your daily activities happier after exhausted work? 
+        <h1 class="home-title">Start Your Day with A Cup of Biji Kopi</h1>
+          <p class="home-subtitle">How to make your daily activities happier after exhausted work? 
             With Biji Kopi we serve the best quality a cup of coffee from the best local farm and 
             highly processed with the best machines. We will make your fabolous day!!</p>
-          <a href="#menu" class="btn btn-home">See Menu</a>
+          <a href="#menu" class="btn home-btn">See Menu</a>
       </div>
     </div>
   </header>
@@ -84,33 +86,31 @@
   <main class="content">
     <article>
       <!-- About Us -->
-      <section>
-        <div id="aboutus" class="aboutus-wrapper">
-          <div class="aboutus-content">
-            <div class="banner">
-              <img class="img-slideshow" src="assets/banner/coffeCup.jpg" alt="Biji Kopi">
-              <img class="img-slideshow" src="assets/banner/blackCofeeBread.jpg" alt="Biji Kopi">
-              <img class="img-slideshow" src="assets/banner/burnCoffe.jpg" alt="Biji Kopi">
-              <img class="img-slideshow" src="assets/banner/blackCoffee.jpg" alt="Biji Kopi">
-              <img class="img-slideshow" src="assets/banner/espressoCoffee.jpg" alt="Biji Kopi">
-              <img class="img-slideshow" src="assets/banner/americano.jpg" alt="Biji Kopi">
-              <img class="img-slideshow" src="assets/banner/latte.jpg" alt="Biji Kopi">
-              <img class="img-slideshow" src="assets/banner/machiatoCoffee.jpg" alt="Biji Kopi">
-              <img class="img-slideshow" src="assets/banner/mixLatte.jpg" alt="Biji Kopi">
-              <img class="img-slideshow" src="assets/banner/milkCoffee.jpg" alt="Biji Kopi">
-            </div>
+      <section id="aboutus">
+        <div class="site-section">
+          <div class="site-section-banner">
+              <img class="img-slideshow" src="static/assets/banner/americano.jpg" alt="Biji Kopi">
+              <img class="img-slideshow" src="static/assets/banner/blackCofeeBread.jpg" alt="Biji Kopi">
+              <img class="img-slideshow" src="static/assets/banner/blackCoffee.jpg" alt="Biji Kopi">
+              <img class="img-slideshow" src="static/assets/banner/burnCoffe.jpg" alt="Biji Kopi">
+              <img class="img-slideshow" src="static/assets/banner/coffeCup.jpg" alt="Biji Kopi">
+              <img class="img-slideshow" src="static/assets/banner/espressoCoffee.jpg" alt="Biji Kopi">
+              <img class="img-slideshow" src="static/assets/banner/latte.jpg" alt="Biji Kopi">
+              <img class="img-slideshow" src="static/assets/banner/machiatoCoffee.jpg" alt="Biji Kopi">
+              <img class="img-slideshow" src="static/assets/banner/milkCoffee.jpg" alt="Biji Kopi">
+              <img class="img-slideshow" src="static/assets/banner/mixLatte.jpg" alt="Biji Kopi">
           </div>
-          <div class="about-text">
-            <h2 class="about-headings">About Biji Kopi</h2>
-            <p>Biji Kopi is a coffe shop that offers a delightful experience, 
+          <div class="site-section-detail">
+            <h2 class="site-section-headings">About Biji Kopi</h2>
+            <p class="site-section-paragraphs">Biji Kopi is a coffe shop that offers a delightful experience, 
               presenting a cup of coffee with an extraordinary taste derived from the finest coffee beans. 
               Every sip of coffee here is a work of art, processed using the most advanced machines, 
               creating an unforgettable delight.</p>
-            <p>By prioritizing quality, Biji Kopi ensures that every coffee bean used is always fresh. 
+            <p class="site-section-paragraphs">By prioritizing quality, Biji Kopi ensures that every coffee bean used is always fresh. 
               We foster close relationships with the best local farmers, ensuring that each coffee bean is sourced from reliable 
               and high-quality origins. Our coffee quality is not only about taste but also about caring for the local farming community, 
               as every cup of coffee you enjoy supports sustainable local agriculture.</p>
-            <p>Visiting Biji Kopi is not just about satisfying the desire for delicious coffee. 
+            <p class="site-section-paragraphs">Visiting Biji Kopi is not just about satisfying the desire for delicious coffee. 
               Here, you will find tranquility and joy in every sip. From a cozy environment to friendly service, 
               we invite you to enjoy an atmosphere full of happiness and enthusiasm. 
               We believe that every cup of coffee we serve is the perfect start to make your day better.</p>
@@ -119,9 +119,9 @@
       </section>
 
       <!-- Menu -->
-      <section>
-        <div id="menu" class="menu-wrapper">
-          <h2 class="menu-headings">Our Purely Beans</h2>
+      <section id="menu">
+        <div class="site-section">
+          <h2 class="site-section-headings">Our Purely Beans</h2>
           <div class="menu-content">
             <!-- Recommended Menu -->
             <header class="picks">
@@ -176,6 +176,24 @@
           </div>
         </div>
       </section>
+
+      <!-- List Order -->
+      <section id="order">
+        <div class="site-section">
+          <h2 class="site-section-headings">Order List</h2>
+
+          <div class="orders-wrapper">
+            <div class="orders">
+              <ul class="orders-list"></ul>
+            </div>
+
+            <div class="orders-btn-group">
+              <button type="submit" class="btn btn-submit">Get Order</button>
+              <button type="reset" class="btn btn-reset">Reset</button>
+            </div>
+          </div>
+        </div>
+      </section>
     </article>
 
     <!-- Sidebar My Profile -->
@@ -205,5 +223,7 @@
     </footer>
   </main>
 
+
+  <script src="static/scripts/search.js"></script>
 </body>
 </html>
