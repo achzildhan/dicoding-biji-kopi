@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biji Kopi | Cafe</title>
+  <script defer src="static/scripts/scripts.js" type="module"></script>
+  <!-- Link to Logo Icon -->
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <!-- Link to Font Awesome -->
+  <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer">
+    <!-- Link to Styles CSS -->
+  <link rel="stylesheet" href="static/styles/styles.css">
+</head>
+<body>
+    
+  <!-- Loading Screen -->
+  <div class="loading-screen">
+    <i class="fa-solid fa-solid loading-screen-spinning-coffe-beans"></i>
+  </div>
+
+  <!-- Header Website -->
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar-wrapper">
+      <div class="navbar-content">
+      <!-- Logo dan Bar Menu Button -->
+      <div class="navbar-content-left-side">
+          <a href="#" class="logo">
+            <img src="static/assets/logoRemove.png" alt="Biji Kopi">
+          </a>
+        </div>
+
+        <button class="btn navbar-menu-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+
+      <!-- Navigation Website -->
+      <ul class="navbar-list">
+        <li class="navbar-list-item">
+          <a href="#home">Home</a>
+        </li>
+        <li class="navbar-list-item">
+          <a href="#aboutus">About us</a>
+        </li>
+        <li class="navbar-list-item">
+          <a href="#menu">Menu</a>
+        </li>
+        <li class="navbar-list-item">
+          <a href="#gallery">Gallery</a>
+        </li>
+      </ul>
+      <!-- Icons -->
+      <div class="navbar-icon">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+      <!-- Search Box -->
+      <div class="search-box">
+        <input type="search" name="search" id="search" placeholder="What types of coffee do you like?">
+      </div>
+    </nav>
+
+    <!-- Home -->
+    <div id="home" class="home-wrapper">
+      <div class="home-content">
+        <h1 class="title">Start Your Day with A Cup of Biji Kopi</h1>
+          <p>How to make your daily activities happier after exhausted work? 
+            With Biji Kopi we serve the best quality a cup of coffee from the best local farm and 
+            highly processed with the best machines. We will make your fabolous day!!</p>
+          <a href="#menu" class="btn btn-home">See Menu</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Website -->
+  <main class="content">
+    <article>
+      <!-- About Us -->
+      <section>
+        <div id="aboutus" class="aboutus-wrapper">
+          <div class="aboutus-content">
+            <div class="banner">
+              <img class="img-slideshow" src="assets/banner/coffeCup.jpg" alt="Biji Kopi">
+              <img class="img-slideshow" src="assets/banner/blackCofeeBread.jpg" alt="Biji Kopi">
+              <img class="img-slideshow" src="assets/banner/burnCoffe.jpg" alt="Biji Kopi">
+              <img class="img-slideshow" src="assets/banner/blackCoffee.jpg" alt="Biji Kopi">
+              <img class="img-slideshow" src="assets/banner/espressoCoffee.jpg" alt="Biji Kopi">
+              <img class="img-slideshow" src="assets/banner/americano.jpg" alt="Biji Kopi">
+              <img class="img-slideshow" src="assets/banner/latte.jpg" alt="Biji Kopi">
+              <img class="img-slideshow" src="assets/banner/machiatoCoffee.jpg" alt="Biji Kopi">
+              <img class="img-slideshow" src="assets/banner/mixLatte.jpg" alt="Biji Kopi">
+              <img class="img-slideshow" src="assets/banner/milkCoffee.jpg" alt="Biji Kopi">
+            </div>
+          </div>
+          <div class="about-text">
+            <h2 class="about-headings">About Biji Kopi</h2>
+            <p>Biji Kopi is a coffe shop that offers a delightful experience, 
+              presenting a cup of coffee with an extraordinary taste derived from the finest coffee beans. 
+              Every sip of coffee here is a work of art, processed using the most advanced machines, 
+              creating an unforgettable delight.</p>
+            <p>By prioritizing quality, Biji Kopi ensures that every coffee bean used is always fresh. 
+              We foster close relationships with the best local farmers, ensuring that each coffee bean is sourced from reliable 
+              and high-quality origins. Our coffee quality is not only about taste but also about caring for the local farming community, 
+              as every cup of coffee you enjoy supports sustainable local agriculture.</p>
+            <p>Visiting Biji Kopi is not just about satisfying the desire for delicious coffee. 
+              Here, you will find tranquility and joy in every sip. From a cozy environment to friendly service, 
+              we invite you to enjoy an atmosphere full of happiness and enthusiasm. 
+              We believe that every cup of coffee we serve is the perfect start to make your day better.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Menu -->
+      <section>
+        <div id="menu" class="menu-wrapper">
+          <h2 class="menu-headings">Our Purely Beans</h2>
+          <div class="menu-content">
+            <!-- Recommended Menu -->
+            <header class="picks">
+              <!-- Top Picks -->
+              <div class="picks-item top-pick">
+                <h3 class="picks-item-title"></h3>
+                <p class="picks-item-desc"></p>
+                <span class="picks-item-price"></span>
+                <button class="btn btn-submit-sm btn-order">
+                  Add to Cart
+                </button>
+              </div>
+
+              <!-- Runner Up -->
+              <aside class="picks-runner-up">
+                <!-- Second -->
+                <div class="picks-item picks-item-sm">
+                  <h3 class="picks-item-title"></h3>
+                  <p class="picks-item-desc"></p>
+                  <span class="picks-item-price"></span>
+                  <button class="btn btn-submit-sm btn-order">
+                    Add to Cart
+                  </button>
+                </div>
+
+                <!-- Third -->
+                <div class="picks-item picks-item-sm">
+                  <h3 class="picks-item-title"></h3>
+                  <p class="picks-item-desc"></p>
+                  <span class="picks-item-price"></span>
+                  <button class="btn btn-submit-sm btn-order">
+                    Add to Cart
+                  </button>
+                </div>
+              </aside>
+            </header>
+
+            <!-- Other Menu -->
+            <footer class="menu-list-wrapper">
+              <!-- Left Button -->
+              <button class="btn btn-cancel menu-prev-btn">
+                <i class="fa-solid fa-angle-left"></i>
+              </button>
+
+              <ul class="menu-list"></ul>
+
+              <!-- Right Button -->
+              <button class="btn btn-cancel menu-next-btn">
+                <i class="fa-solid fa-angle-right"></i>
+              </button>
+            </footer>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <!-- Sidebar My Profile -->
+    <aside class="profile">
+      <div class="profile-detail-wrapper">
+        <img 
+          src="static/zildhan.jpg" 
+          alt="Raden Achmad Zildhan F. B">
+        <div class="profile-detail">
+          <span class="name">Raden Achmad Zildhan Frans Bestand</span> <br>
+          <span>Email: 
+            <a href="mailto:zildhanfb08@gmail.com">zildhanfb08@gmail.com</a>
+          </span> <br>
+          <span>LinkedIn: 
+            <a href="https://www.linkedin.com/in/raden-achmad-zildhan-fb/">Raden Achmad Zildhan FB</a>
+          </span> <br>
+          <span>Github:
+            <a href="https://github.com/zildhanfb08/">zildhanfb08</a>
+          </span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Footer Website -->
+    <footer>
+      
+    </footer>
+  </main>
+
+</body>
+</html>
