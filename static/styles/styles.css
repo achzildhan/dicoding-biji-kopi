@@ -76,29 +76,29 @@ body {
   cursor: pointer;
 }
 .btn-submit {
-  background-color: var(--font-color-main);
-  border-color: var(--font-color-main);
-  padding: 0.5rem 1.5rem;
-  color: var(--font-color-tertiary);
-  font-size: 1.5rem;
+  background-color: var(--color-semidark);
+  border-color: var(--color-semidark);
+  padding: 0.5rem 1rem;
+  color: var(--font-color-main);
+  font-size: 1rem;
   font-weight: 500;
   transition: background-color 300ms var(--rounded);
 }
 .btn-submit:hover {
-  background-color: var(--font-color-secondary);
-  border-color: var(--font-color-secondary);
+  background-color: var(--font-color-tertiary);
+  border-color: var(--font-color-tertiary);
 }
 .btn-submit-sm {
-  background-color: var(--color-dark);
-  border-color: var(--color-dark);
+  background-color: var(--color-semidark);
+  border-color: var(--color-semidark);
   padding: 0.5rem 1rem;
   color: var(--font-color-main);
   font-weight: 500;
   transition: background-color 300ms var(--rounded);
 }
 .btn-submit-sm:hover {
-  background-color: var(--color-semidark);
-  border-color: var(--color-semidark);
+  background-color: var(--font-color-tertiary);
+  border-color: var(--font-color-tertiary);
 }
 .btn-reset {
   background-color: var(--color-darkest);
@@ -452,24 +452,25 @@ section#menu {
 }
 
 .picks-item-title {
-  font-size: 2rem;
+  font-size: 3rem;
   color: var(--font-color-main);
   font-weight: 700;
 }
 
 .picks-item-desc {
   font-size: 1rem;
+  font-weight: 300;
   color: var(--font-color-tertiary);
 }
 
 .picks-item-price {
-  font-weight: 700;
-  font-size: 2rem;
+  font-weight: 500;
+  font-size: 2.25rem;
   color: var(--font-color-secondary);
 }
 
 .picks-item-sm .picks-item-title {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: var(--font-color-main);
   font-weight: 700;
 }
@@ -480,8 +481,8 @@ section#menu {
 }
 
 .picks-item-sm .picks-item-price {
-  font-weight: 700;
-  font-size: 1.5rem;
+  font-weight: 500;
+  font-size: 1.75rem;
   color: var(--font-color-secondary);
 }
 
@@ -556,19 +557,19 @@ section#menu {
 
 .menu-card-title {
   font-weight: 700;
-  font-size: larger;
-  color: var(--highlight-orange);
+  font-size: 1.5rem;
+  color: var(--font-color-main);
 }
 
 .menu-card-desc {
-  font-weight: 700;
-  font-size: smaller;
+  font-weight: 300;
+  font-size: 0.9rem;
   color: var(--color-tertiary);
 }
 
 .menu-card-price {
-  color: var(--color-main);
-  font-size: x-large;
+  color: var(--font-color-secondary);
+  font-size: 1.5rem;
 }
 
 /* END OF SITE SECTION MENU CODE */

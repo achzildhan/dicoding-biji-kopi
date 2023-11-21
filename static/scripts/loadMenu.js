@@ -186,7 +186,7 @@ function loadMenu() {
           <p class="menu-card-desc">
             ${coffeesData[i].description}
           </p>
-          <span class="menu-card-price">${coffeesData[i].price}</span>
+          <span class="menu-card-price">$${coffeesData[i].price}</span>
         </figcaption>
         <button data-menu-id="${coffeesData[i].id}" class="btn btn-submit btn-order">Add To Orders</button>
       </figure>
