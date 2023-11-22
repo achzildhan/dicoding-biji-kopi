@@ -915,13 +915,22 @@ section#gallery::after {
 }
 
 .profile-detail span {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Poppins', sans-serif;
   align-self: flex-start;
+  color: var(--font-color-main);
+}
+
+.profile-detail .name {
+  font-weight: 700;
+  font-size: 1rem;
+  text-shadow: 1px 1px var(--font-color-secondary);
 }
 
 .profile-detail span a {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: underline;
   align-self: flex-start;
+  color: var(--font-color-tertiary);
 }
 
 .profile-detail-wrapper .btn {
