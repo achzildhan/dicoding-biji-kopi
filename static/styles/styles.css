@@ -136,6 +136,7 @@ body {
   justify-content: center;
   align-items: center;
   color: var(--font-color-tertiary);
+  transition: all 200ms var(--rounded);
 }
 .btn-to-top:hover {
   background-color: var(--font-color-secondary);
@@ -150,6 +151,7 @@ body {
   width: 2rem;
   aspect-ratio: 1 / 1;
   background-color: transparent;
+  transition: all 200ms var(--rounded);
   border-color: var(--font-color-tertiary);
 }
 .btn-cancel:hover {
@@ -234,6 +236,7 @@ body {
   font-weight: 700;
   padding: 0.5rem 1rem;
   text-decoration: none;
+  transition: all 300ms var(--rounded);
   color: var(--font-color-main);
   transition: color 100ms var(--rounded);
 }
@@ -327,6 +330,7 @@ body {
   color: var(--font-color-main);
   border-color: var(--font-color-tertiary);
   padding: 1rem 1.5rem;
+  transition: all 300ms var(--rounded);
   font-weight: 500;
 }
 .home-btn:hover {
@@ -800,8 +804,16 @@ section#gallery::after {
   display: flex;
   flex-direction: row;
   gap: 2rem;
-  color: var(--font-color-tertiary);
+}
+
+.footer-social-media a {
   font-size: 2rem;
+  color: var(--font-color-tertiary);
+  transition: all 3000ms var(--rounded);
+}
+
+.footer-social-media a:hover {
+  color: var(--font-color-secondary);
 }
 
 .footer-headings {
@@ -819,7 +831,16 @@ section#gallery::after {
 .footer-navlist .link {
   padding: 0.5rem 0rem;
   font-size: 1.25rem;
+  transition: all 300ms var(--rounded);
   color: var(--font-color-tertiary);
+  transition: all 300ms var(--rounded);
+}
+
+.footer-navlist .link:hover {
+  background-color: var(--font-color-main);
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  border: none;
 }
 
 .footer-item-title {
