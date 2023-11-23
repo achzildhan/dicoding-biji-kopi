@@ -159,47 +159,6 @@ body {
   border-color: var(--font-color-main);
 }
 
-/* Loading */
-/* Sementara */
-.loading-screen {
-  display: none;
-}
-
-/* .loading-screen {
-  position: fixed;
-  z-index: 999;
-  background-color: var(--color-darkest-half);
-  backdrop-filter: blur(80px);
-  inset: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-@keyframes hide-loading-screen {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0.1;
-  }
-}
-
-@keyframes spinning-burger {
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-.loading-screen-spinning-burger {
-  font-size: 6rem;
-  font-weight: 700;
-  color: var(--color-tertiary);
-  animation: spinning-burger 2s infinite linear;
-} */
-
-/* Loading */
-
 /* Navbar */
 .navbar-wrapper {
   background-color: var(--color-darker-half);
